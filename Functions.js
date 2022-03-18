@@ -22,10 +22,11 @@ function myFunction() {
 //   Normally we use the function keyword before the function name to define a function in JavaScript,
 //    however, in anonymous functions in JavaScript, we use only the function keyword without the function name.
   
-function() {
-    alert('hello');
-  }
+// function () {
+//     alert('hello');
+//   }
   
+
 
 //   Function scope
 
@@ -40,7 +41,7 @@ function run() {
   console.log(message); // 'Run, Forrest, Run!'s
 }
 run();
-console.log(message); // throws ReferenceError
+// console.log(message); // throws ReferenceError
 //run() function //body creates a scope.
  //The variable message is accessible inside of the function scope, but inaccessible outside.
 
@@ -57,9 +58,9 @@ function run() {
   console.log(run2);  // function
 }
 run();
-console.log(two);   // throws ReferenceError
-console.log(count); // throws ReferenceError
-console.log(run2);  // throws ReferenceError
+//console.log(two);   // throws ReferenceError
+//console.log(count); // throws ReferenceError
+//console.log(run2);  // throws ReferenceError
 
 //What are return values?
 
@@ -99,3 +100,13 @@ let welcome = (age < 18) ?
   () => alert("Greetings!");
 
 welcome();
+
+
+var test = {
+  details : function name () {
+    console.log("Welcome")
+
+  }
+}
+console.log(test.name())
+
